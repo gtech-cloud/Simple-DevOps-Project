@@ -9,6 +9,6 @@ spec:
     app: vg-devops-project
   type: LoadBalancer
   ports:
-    - port: 8080
-      targetPort: 8080
-      nodePort: 31200
+    - port: 8080        # POD Level
+      targetPort: 8080  # Cluster Level
+      nodePort: 31200   # external level
